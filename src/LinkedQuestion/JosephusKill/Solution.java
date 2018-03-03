@@ -14,6 +14,52 @@ import LinkedQuestion.Node.Node;
  */
 public class Solution {
     public Node josephusKillOne(Node head,int m){
-        return null;
+        if(head == null|| head.next == head || m<1){
+            return head;
+        }
+        Node last = head;
+        while (last.next != head){
+            last = last.next;
+        }
+        int count = 0;
+        while (head != last){
+            if(++count == m){
+                System.out.println(last.next.value);
+                last.next = head.next;
+                count = 0;
+            }else {
+                last = last.next;
+            }
+            head = last.next;
+        }
+        return head;
+    }
+
+    /**
+     * 进阶：
+     *  如果链表节点数为N，想在时间复杂度为O(N)时完成原问题的要求。
+     */
+    public Node josephusKillTwo(Node head,int m){
+       if(head == null || head.next == head || m<1){
+           return head;
+       }
+       Node cur = head.next;
+       int tmp = 1;
+       while (cur != head){
+           tmp++;
+           cur = cur.next;
+       }
+       tmp = getLive(tmp,m);
+       while (--tmp != 0){
+           head = head.next;
+       }
+       head.next = head;
+       return head;
+    }
+    private int getLive(int i,int m){
+        if(i==1){
+            return 1;
+        }
+        return (getLive(i-1,m)+m-1) % i + 1;
     }
 }
