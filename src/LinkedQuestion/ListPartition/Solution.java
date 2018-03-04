@@ -17,7 +17,7 @@ import java.util.TreeSet;
  *  右部分都是大于3的节点即可。对某部分内部的节点顺序不做要求。
  */
 public class Solution {
-    public Node listPartition(Node head,int pivot) {
+    public Node listPartitionOne(Node head,int pivot) {
         if(head == null || head.next ==null)
             return head;
         Node cur = head;
@@ -76,5 +76,54 @@ public class Solution {
      *    ~ 如果链表长度为N，时间复杂度请达到O(N)，额外空间复杂度请达到O(1)。
      */
 
+    public Node listPartitionTwo(Node head,int pivot){
+        Node sH = null;     //小链表的头部
+        Node sT = null;     //小链表的尾部
+        Node iH = null;     //相等链表的头部
+        Node iT = null;     //相等链表的尾部
+        Node bH = null;     //大链表的头部
+        Node bT = null;     //大链表的尾部
+        Node next = null;
+        while (head!= null){
+            next = head.next;
+            head.next = null;
+            if(head.value < pivot){
+                if(sH == null){
+                    sH = head;
+                    sT = head;
+                }else {
+                    sT.next = head;
+                    sT = head;
+                }
+            }else if(head.value== pivot){
+                if(iH == null){
+                    iH = head;
+                    iT = head;
+                }else {
+                    iT.next = head;
+                    iT = head;
+                }
+            }else{
+                if(bH == null){
+                    bH = head;
+                    bT = head;
+                }else {
+                    bT.next = head;
+                    bT = head;
+                }
+            }
+            head = next;
+        }
+
+        //将三个链表连成一个链表，注意有的链表为null的情况
+        if(sT!=null){
+            sT.next = iH;
+            iT = iT==null ? sT : iT;
+        }
+        if(iT!=null){
+            iT.next = bH;
+        }
+        return sH != null ? sH : iH != null ? iH : bH;
+    }
 }
 

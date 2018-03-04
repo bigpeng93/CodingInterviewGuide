@@ -1,6 +1,11 @@
 package LinkedQuestion.Node;
 
 public class TestNode {
+
+    /**
+     * 打印链表
+     * @param head 链表的首节点
+     */
     public static void printNode(Node head){
         while (head != null){
             if(head != head.next)
@@ -13,19 +18,21 @@ public class TestNode {
         }
         System.out.println();
     }
+
+    /**
+     * 由数组创建一个链表
+     * @param nums  数组
+     * @return      返回链表的首节点
+     */
     public static Node makeLinkedNode(int[] nums){
-        int len = nums.length;
-        if(len <= 0)
-            return null;
-        Node head = new Node(nums[0]);
-        Node preHead = head;
-        for(int i = 0; i<len-1;i++){
-            head.next = new Node(nums[i+1]);
-            head=head.next;
-        }
-        head.value = nums[len-1];
-        return preHead;
+        return makeLoopLinkedNode(nums,-1);
     }
+
+    /**
+     * 由数组创建一个双向链表
+     * @param nums  数组
+     * @return      返回链表的首节点
+     */
     public static DoubleNode makeLinkedDoubleNode(int[] nums){
         int len = nums.length;
         if(len <=0)
@@ -39,26 +46,25 @@ public class TestNode {
         for(int i = 0; i<len-1;i++){
             head.next = new DoubleNode(nums[i+1]);
             head.next.last = head;
-            head=head.next;
+            head=(DoubleNode)head.next;
         }
         return cur;
     }
 
+    /**
+     * 创建一个收尾相连的链表
+     * @param nums  数组
+     * @return  返回链表的首节点，也就是源数组的第一个元素
+     */
     public static Node makeRoundLinkedNode(int[] nums){
         int len = nums.length;
-        if(len <= 0)
-            return null;
-        Node head = new Node(nums[0]);
-        Node preHead = head;
-        for(int i = 0; i<len-1;i++){
-            head.next = new Node(nums[i+1]);
-            head=head.next;
-        }
-        head.value = nums[len-1];
-        head.next = preHead;
-        return preHead;
+        return makeLoopLinkedNode(nums,0);
     }
 
+    /**
+     * 打印双向链表
+     * @param head  双向链表的首节点
+     */
     public static void printNode(DoubleNode head){
         while (head != null){
             System.out.print(head.value);
@@ -74,8 +80,75 @@ public class TestNode {
     }
 
 
+    /**
+     * 生成一个带有环的链表
+     * @param nums  由数组创建一个链表
+     * @param m     环入口节点在链表中的位置，从0开始计算
+     * @return      新链表的首节点
+     */
+    public static Node makeLoopLinkedNode(int[] nums,int m){
+        int len = nums.length;
+        if (len <= 0 || m>len-1)
+            return null;
+        Node preHead = new Node(0);     //设置一个虚拟的前置节点
+        Node cur = preHead;
+        if (m<0) {
+            for (int i = 0; i < len; i++) {
+                cur.next = new Node(nums[i]);
+                cur = cur.next;
+            }
+            return preHead.next;
+        }else{
+            int i = 0;
+            Node loop = preHead;
+            for(;i<m;i++){
+                cur.next = new Node(nums[i]);
+                cur = cur.next;
+            }
+            if(i==m){
+                loop = cur;
+            }
+            while (i<len){
+                cur.next = new Node(nums[i]);
+                cur = cur.next;
+                i++;
+            }
+            cur.next = loop;
+            return preHead;
+        }
+    }
+
+
+
+    /**
+     * 测试链表是否是一个环，如果是，则返回环入口的节点
+     * @param head
+     * @return
+     */
+    public static Node testLoopNode(Node head){
+        if(head == null || head.next == null || head.next.next == null){
+            return null;
+        }
+        Node n1 = head.next;
+        Node n2 = head.next.next;
+        while (n1 != n2){
+            if(n1 == null || n2 == null){
+                return null;
+            }
+            n1 = n1.next;
+            n2 = n2.next.next;
+        }
+        n2 = head;
+        while (n1 != n2){
+            n1 = n1.next;
+            n2 = n2.next;
+        }
+        return n1;
+    }
+
     public static void main(String[] args) {
         int[] nums = {1,2,3,4,5,6,7,8,9};
+        //printNode(makeLinkedDoubleNode(nums));
         printNode(makeLinkedDoubleNode(nums));
     }
 }

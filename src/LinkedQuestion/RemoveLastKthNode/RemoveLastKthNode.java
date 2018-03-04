@@ -39,19 +39,19 @@ public class RemoveLastKthNode {
         while (cur != null){
             System.out.println(lastKth+":"+cur.value);
             lastKth--;
-            cur = cur.next;
+            cur = (DoubleNode)cur.next;
 
         }
         if(lastKth == 0) {
-            head = head.next;
+            head = (DoubleNode)head.next;
             head.last = null;
         }
         if(lastKth < 0){
             cur = head;
             while (++lastKth != 0){
-                cur = cur.next;
+                cur = (DoubleNode)cur.next;
             }
-            DoubleNode newNext = cur.next.next;
+            DoubleNode newNext = (DoubleNode)cur.next.next;
             cur.next = newNext;
             if(newNext != null){
                 newNext.last = null;

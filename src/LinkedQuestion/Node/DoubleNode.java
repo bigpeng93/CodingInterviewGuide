@@ -1,10 +1,9 @@
 package LinkedQuestion.Node;
 
-public class DoubleNode {
-    public int value;
+public class DoubleNode extends Node{
     public DoubleNode last;
     public DoubleNode next;
-    public DoubleNode(int data){
-        this.value = data;
+    public DoubleNode(int data) {
+        super(data);
     }
 }
