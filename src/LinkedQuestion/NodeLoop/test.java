@@ -11,5 +11,7 @@ public class test extends TestNode{
         Node head2 = makeLinkedNode(nums2);
         makeBothLinkedNode(head1,4,head2,3);
         System.out.println(new Solution().getIntersectNode(head1,head2).value);
+
+
     }
 }
