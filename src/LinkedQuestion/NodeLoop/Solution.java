@@ -22,7 +22,7 @@ public class Solution {
         Node n1 = head.next;
         Node n2 = head.next.next;
         while (n1 != n2){
-            if(n1 == null || n2 == null){
+            if(n2.next == null || n2.next.next == null){
                 return null;
             }
             n1 = n1.next;

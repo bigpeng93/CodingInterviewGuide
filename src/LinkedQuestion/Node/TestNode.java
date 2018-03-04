@@ -25,7 +25,7 @@ public class TestNode {
      * @return      返回链表的首节点
      */
     public static Node makeLinkedNode(int[] nums){
-        return makeLoopLinkedNode(nums,-1);
+        return makeLoopLinkedNode(nums,-1,nums.length,true);
     }
 
     /**
@@ -57,8 +57,7 @@ public class TestNode {
      * @return  返回链表的首节点，也就是源数组的第一个元素
      */
     public static Node makeRoundLinkedNode(int[] nums){
-        int len = nums.length;
-        return makeLoopLinkedNode(nums,0);
+        return makeLoopLinkedNode(nums,0,-1,true);
     }
 
     /**
@@ -84,20 +83,31 @@ public class TestNode {
      * 生成一个带有环的链表
      * @param nums  由数组创建一个链表
      * @param m     环入口节点在链表中的位置，从0开始计算
+     * @param n     由数组前n个元素生成链表，从0开始计算
+     * @param hOrt  true：返回链表的头部；false：返回链表的尾部
      * @return      新链表的首节点
      */
-    public static Node makeLoopLinkedNode(int[] nums,int m){
+    public static Node makeLoopLinkedNode(int[] nums,int m,int n,boolean hOrt){
         int len = nums.length;
         if (len <= 0 || m>len-1)
             return null;
         Node preHead = new Node(0);     //设置一个虚拟的前置节点
         Node cur = preHead;
         if (m<0) {
-            for (int i = 0; i < len; i++) {
-                cur.next = new Node(nums[i]);
-                cur = cur.next;
+            if (n<0){
+                return null;
+            }else if (n>len-1){
+                for (int i = 0; i < len; i++) {
+                    cur.next = new Node(nums[i]);
+                    cur = cur.next;
+                }
+            }else{
+                for(int i = 0;i <= m;i++){
+                    cur.next = new Node(nums[i]);
+                    cur = cur.next;
+                }
             }
-            return preHead.next;
+            return hOrt?preHead.next:cur;
         }else{
             int i = 0;
             Node loop = preHead;
@@ -114,10 +124,53 @@ public class TestNode {
                 i++;
             }
             cur.next = loop;
-            return preHead;
+            return hOrt?preHead.next:cur;
         }
     }
 
+
+    /**
+     * 通过数组创建链表，并返回链表的尾节点
+     * @param nums  数组
+     * @param m     环入口节点在链表中的位置，从0开始计算
+     * @return      返回链表的尾节点
+     */
+    public static Node makeLoopLinkedTailNode(int[] nums,int m){
+        return makeLoopLinkedNode(nums,m,-1,false);
+    }
+
+    /**
+     * 将head2的第n个元素的尾部指向head1的第m个元素，使两个链表相交
+     * @param head1
+     * @param m
+     * @param head2
+     * @param n
+     */
+    public static void makeBothLinkedNode(Node head1,int m,Node head2,int n){
+        Node mNode = getNthNode(head1,m);
+        Node nNode = getNthNode(head2,n);
+        if (mNode == null || nNode == null){
+            return;
+        }
+        nNode.next = mNode;
+    }
+
+    /**
+     * 获取链表的第n个元素
+     * @param head  链表的首节点
+     * @param n     第n个节点，从0开始计算。
+     * @return      返回第n个节点
+     */
+    public static Node getNthNode(Node head ,int n){
+        Node cur = head;
+        while (n-- >0){
+            if (cur == null){
+                return null;
+            }
+            cur = cur.next;
+        }
+        return cur;
+    }
 
 
     /**
