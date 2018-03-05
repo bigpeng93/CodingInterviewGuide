@@ -1,6 +1,6 @@
 package LinkedQuestion.Node;
 
-public class TreeNode {
+public class TreeNode{
     public int value;
     public TreeNode left;
     public TreeNode right;

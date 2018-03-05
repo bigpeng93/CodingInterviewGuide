@@ -2,6 +2,9 @@ package LinkedQuestion.Convert;
 
 import LinkedQuestion.Node.TreeNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 将搜索二叉树转换为双向链表
  *
@@ -13,7 +16,34 @@ public class Solution {
     //方法一：用队列等容器收集二叉树中序遍历结果的方法。
     //时间复杂度为O(N)，额外空间复杂度为O(N)。
     public TreeNode convertOne(TreeNode head){
-        return null;
+        Queue<TreeNode> queue = new LinkedList<>();
+        inOrderToQueue(head,queue);
+        if(queue.isEmpty())
+            return null;
+        head = queue.poll();
+        TreeNode pre = head;
+        pre.left = null;
+        TreeNode cur = null;
+        while (!queue.isEmpty()){
+            cur = queue.poll();
+            pre.right = cur;
+            cur.left = pre;
+            pre = cur;
+        }
+        pre.right = null;
+        return head;
+
     }
+    public void inOrderToQueue(TreeNode head, Queue<TreeNode> queue){
+        if(head == null){
+            return;
+        }
+        inOrderToQueue(head.left,queue);
+        queue.offer(head);
+        inOrderToQueue(head.right,queue);
+    }
+
+    //方法二：利用递归函数，除此之外不使用任何容器的方法。
+    // 时间复杂度为O(N)，额外空间复杂度为O(h),h为二叉树的高度。
 
 }
