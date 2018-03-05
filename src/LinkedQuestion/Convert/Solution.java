@@ -45,5 +45,43 @@ public class Solution {
 
     //方法二：利用递归函数，除此之外不使用任何容器的方法。
     // 时间复杂度为O(N)，额外空间复杂度为O(h),h为二叉树的高度。
-
+    public TreeNode convertTwo(TreeNode head){
+        if(head == null){
+            return null;
+        }
+        TreeNode last = process(head);
+        head = last.right;
+        last.right = null;
+        return head;
+    }
+    public TreeNode process(TreeNode head){
+        if(head == null){
+            return null;
+        }
+        TreeNode leftE = process(head.left);
+        TreeNode rightE = process(head.right);
+        TreeNode leftS = leftE!=null ? leftE.right:null;
+        TreeNode rightS = rightE!=null ? rightE.right:null;
+        if(leftE != null && rightE != null){
+            leftE.right = head;
+            head.left = leftE;
+            head.right = rightS;
+            rightS.left = head;
+            rightE.right = leftS;
+            return rightE;
+        }else if(leftE != null){
+            leftE.right = head;
+            head.left = leftE;
+            head.right = leftS;
+            return head;
+        }else if(rightE !=null){
+            head.right = rightS;
+            rightS.left = head;
+            rightE.right = head;
+            return rightE;
+        }else {
+            head.right = head;
+            return head;
+        }
+    }
 }
