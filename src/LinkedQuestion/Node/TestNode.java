@@ -8,13 +8,51 @@ public class TestNode {
      */
     public static void printNode(Node head){
         while (head != null){
-            if(head != head.next)
+            if(head != head.next)       //防治节点的next指向自己
                 System.out.print(head.value+" ");
             else {
                 System.out.print(head.value);
                 break;
             }
             head = head.next;
+        }
+        System.out.println();
+    }
+
+    /**
+     * 打印双向链表
+     * @param head  双向链表的首节点
+     */
+    public static void printNode(DoubleNode head){
+        while (head != null){
+            System.out.print(head.value);
+            if(head.next !=null && head.next.last.value == head.value){
+                System.out.print(" <---> ");
+            }
+            if(head.next !=null && head.next.last.value != head.value){
+                System.out.print(" ----> ");
+            }
+            head = head.next;
+        }
+        System.out.println();
+    }
+
+    /**
+     * 打印环形链表
+     * @param head  链表的任何一个节点
+     */
+    public static void printRoundNode(Node head){
+        Node cur = head;
+        System.out.print(cur.value+" ");
+        cur = cur.next;
+        while (cur != head){
+            if(cur != cur.next)
+                System.out.print(cur.value+" ");
+            else {
+                System.out.print(cur.value);
+                break;
+            }
+            cur = cur.next;
         }
         System.out.println();
     }
@@ -52,30 +90,12 @@ public class TestNode {
     }
 
     /**
-     * 创建一个收尾相连的链表
+     * 创建一个首尾相连的链表
      * @param nums  数组
      * @return  返回链表的首节点，也就是源数组的第一个元素
      */
     public static Node makeRoundLinkedNode(int[] nums){
         return makeLoopLinkedNode(nums,0,-1,true);
-    }
-
-    /**
-     * 打印双向链表
-     * @param head  双向链表的首节点
-     */
-    public static void printNode(DoubleNode head){
-        while (head != null){
-            System.out.print(head.value);
-            if(head.next !=null && head.next.last.value == head.value){
-                System.out.print(" <---> ");
-            }
-            if(head.next !=null && head.next.last.value != head.value){
-                System.out.print(" ----> ");
-            }
-            head = head.next;
-        }
-        System.out.println();
     }
 
 
@@ -111,12 +131,12 @@ public class TestNode {
         }else{
             int i = 0;
             Node loop = preHead;
-            for(;i<m;i++){
+            for(;i<=m;i++){
                 cur.next = new Node(nums[i]);
                 cur = cur.next;
-            }
-            if(i==m){
-                loop = cur;
+                if(i==m){
+                    loop = cur;
+                }
             }
             while (i<len){
                 cur.next = new Node(nums[i]);
