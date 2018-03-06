@@ -8,4 +8,8 @@ package BinaryTree.SerialOrReconTreeNode;
  * 请设计一种二叉树序列化和反序列化的方案，并用代码实现。
  */
 public class Solution {
+    //方法一：通过先序遍历实现序列化和反序列化
+
+
+    //方法二：通过层遍历实现序列化和反序列化
 }
