@@ -1,8 +1,8 @@
 package ArrayAndMatrix.LeftUnique;
 
-import ArrayAndMatrix.TestSolution;
+import ArrayAndMatrix.TestArray;
 
-public class test extends TestSolution{
+public class test extends TestArray {
     public static void main(String[] args) {
         int[] nums = {1,2,2,2,3,3,4,5,6,6,7,7,8,8,8,9};
         new Solution().leftUnique(nums);

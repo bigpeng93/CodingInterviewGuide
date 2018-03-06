@@ -14,7 +14,6 @@ import BinaryTree.Node.Node;
 public class Solution {
     public void printTree(Node head){
         printInOrder(head,0,"H",17);
-
     }
 
     /**

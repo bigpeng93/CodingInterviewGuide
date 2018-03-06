@@ -3,6 +3,8 @@ package LinkedQuestion.JosephusKill;
 import LinkedQuestion.Node.Node;
 
 /**
+ * 环形单链表的约瑟夫问题
+ *
  * 据说著名的犹太历史学家Josephus有过以下故事：在罗马人占领桥塔帕特后，
  * 39个犹太人与Josephus 及他的朋友躲到一个洞中，39个犹太人宁愿死也不要被敌人抓到，
  * 于是决定了一个自杀方式，41个人排成一个圆圈，由第一个人开始报数，报数到3的人就自杀，

@@ -3,6 +3,8 @@ package LinkedQuestion.Merge;
 import LinkedQuestion.Node.Node;
 
 /**
+ * 合并两个有序的单链表
+ *
  * 给定两个有序单链表的头节点head1和head2，请合并两个有序链表，合并后的链表依然有序，
  * 并返回合并后链表的头节点。
  * 例如：

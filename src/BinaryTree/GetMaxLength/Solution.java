@@ -1,5 +1,7 @@
 package BinaryTree.GetMaxLength;
 
+import BinaryTree.Node.Node;
+
 /**
  * 在二叉树中找到累加和为指定值的最长路径长度
  *
@@ -19,5 +21,7 @@ package BinaryTree.GetMaxLength;
  * 注：本题不考虑节点值相加可能溢出的情况
  */
 public class Solution {
-
+    public int getMaxLength(Node head,int sum){
+        return 0;
+    }
 }

@@ -1,6 +1,6 @@
 package ArrayAndMatrix;
 
-public class TestSolution {
+public class TestArray {
     public static void PrintArray(int[] nums){
         int i = 0;
         while (i !=nums.length){

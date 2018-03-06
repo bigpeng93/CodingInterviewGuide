@@ -4,6 +4,8 @@ import LinkedQuestion.Node.DoubleNode;
 import LinkedQuestion.Node.Node;
 
 /**
+ * 反转单项和双向链表
+ *
  * 分别实现反转单向链表和反转双向链表的函数
  */
 public class Solution {
