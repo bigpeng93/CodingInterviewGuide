@@ -23,6 +23,10 @@ public class TestBinaryTree {
             while (j<nums[i].length){
                 int cur = 0;
                 while (cur<nums[i-1].length) {
+
+                    if(j>=nums[i].length){
+                        break;
+                    }
                     //如果前一行节点中出现-1，则代表为null节点，则将指针指向下一个不是-1的节点。
                     if(nums[i-1][cur]==-1){
                         cur++;
