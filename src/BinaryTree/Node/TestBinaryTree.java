@@ -2,11 +2,12 @@ package BinaryTree.Node;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Stack;
 
 public class TestBinaryTree {
     /**
      * 默认测试二叉树中没有数值重复的节点(实际情况很少出现数值重复的节点)，
-     * 同时数值均大于0。所以如果二维数组中出现-1值，说明该处节点为null。
+     * 假设如果二维数组中出现-1值，说明该处节点为null。
      *
      * @param nums  用于创建二叉树的二维数组
      * @return  返回二叉树的根节点
@@ -58,6 +59,98 @@ public class TestBinaryTree {
         }
         return head;
     }
+
+    /**
+     * 从根节点为head的二叉树中返回数值为num的节点
+     * @param head  二叉树的根节点
+     * @param num   要查找的二叉树节点的值
+     * @return      返回查找的节点，如果不存在返回null
+     */
+    public static Node getNode(Node head,int num){
+        if (head == null)
+            return null;
+        if (head.value == num)
+            return head;
+        Node left = getNode(head.left,num);
+        Node right= getNode(head.right,num);
+        return left==null?right:left;
+    }
+
+
+    /**
+     * 生成具有父节点的二叉树，默认测试中没有数值重复的节点(实际情况很少出现数值重复的节点)，
+     * 假设如果二维数组中出现-1值，说明该处节点为null。
+     * @param nums  用于创建二叉树的二维数组
+     * @return      返回二叉树的根节点
+     */
+    public static NewNode makeBinaryNewNode(int[][] nums){
+        return makeBinaryNewNode(nums,-1);
+    }
+
+    /**
+     * 创建具有父节点的二叉树，返回值为num的节点，如果num值为-1，则返回根节点
+     * @param nums  用于创建二叉树的二维数组
+     * @param num   如果二叉树中不存在值为num的节点则返回null
+     * @return      返回值为num的节点或根节点
+     */
+
+    public static NewNode makeBinaryNewNode(int[][] nums,int num){
+        if (nums == null)
+            return null;
+        NewNode curNode = null;
+        NewNode head = new NewNode(nums[0][0]);
+        int len = nums.length;
+        HashMap<Integer,NewNode> map = new HashMap<>();
+        map.put(nums[0][0],head);
+        for (int i=1;i<len;i++){
+            int j = 0;
+            while (j<nums[i].length){
+                int cur = 0;
+                while (cur<nums[i-1].length) {
+
+                    if(j>=nums[i].length){
+                        break;
+                    }
+                    //如果前一行节点中出现-1，则代表为null节点，则将指针指向下一个不是-1的节点。
+                    if(nums[i-1][cur]==-1){
+                        cur++;
+                        continue;
+                    }
+                    //创建left节点
+                    if (nums[i][j]==-1) {
+                        map.get(nums[i-1][cur]).left = null;
+                        j++;
+                    }else{
+                        NewNode temp = new NewNode(nums[i][j]);
+                        map.get(nums[i-1][cur]).left = temp;
+                        temp.parent = map.get(nums[i-1][cur]);
+                        if (nums[i][j] == num){
+                            curNode = temp;
+                        }
+                        map.put(nums[i][j],temp);
+                        j++;
+                    }
+                    //创建right节点
+                    if (nums[i][j]==-1) {
+                        map.get(nums[i-1][cur]).right = null;
+                        j++;
+                    }else{
+                        NewNode temp = new NewNode(nums[i][j]);
+                        map.get(nums[i-1][cur]).right = temp;
+                        temp.parent = map.get(nums[i-1][cur]);
+                        if (nums[i][j] == num){
+                            curNode = temp;
+                        }
+                        map.put(nums[i][j],temp);
+                        j++;
+                    }
+                    cur++;
+                }
+            }
+        }
+        return num==-1?head:curNode;
+    }
+
 
     public static void printTree(Node head){
         printInOrder(head,0,"H",17);

@@ -10,4 +10,29 @@ package BinaryTree.IsPostArray;
  *
  */
 public class Solution {
+    public boolean isPostArray(int[] arr){
+        if (arr==null||arr.length<1)
+            return false;
+        return isPost(arr,0,arr.length-1);
+    }
+    public boolean isPost(int[] arr,int start,int end){
+        if (start == end)
+            return true;
+        int less = -1;  //指向比最后一个元素小的那一部分的最后一个元素
+        int more = end; //指向比最后一个元素大的那一部分的开始的一个元素
+        for (int i = start;i<=end-1;i++){
+            if(arr[i]<arr[more]){
+                less = i;
+            }else {
+                more = more==end?i:more;
+            }
+        }
+        if (less == -1 || more == end){
+            return isPost(arr,start,end-1);
+        }
+        if (less!=more-1){
+            return false;
+        }
+        return isPost(arr,start,less) && isPost(arr,more,end-1);
+    }
 }
