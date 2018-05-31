@@ -1,4 +1,4 @@
-package RecursionAndDynamic.LongestConsecutive;
+package RecursionAndDynamic.Merge;
 
 /**
  * 数组中的最长连续序列
@@ -9,4 +9,7 @@ package RecursionAndDynamic.LongestConsecutive;
  *  arr={100,4,200,1,3,2},最长的连续序列为[1,2,3,4],所以返回4.
  */
 public class Question {
+    public int longestConsecutive(int[] arr){
+
+    }
 }
