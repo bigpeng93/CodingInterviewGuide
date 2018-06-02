@@ -12,4 +12,5 @@ package RecursionAndDynamic.NQueen;
  *  n=8,返回92.
  */
 public class Question {
+
 }

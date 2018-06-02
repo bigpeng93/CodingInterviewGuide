@@ -17,4 +17,31 @@ package RecursionAndDynamic.Num;
  *  能转换出的结果是"J",返回1.
  */
 public class Question {
+    //暴力递归
+    public int num1(String str){
+        if (str==null||str.equals(""))
+            return 0;
+        char[] chs = str.toCharArray();
+        return process(chs,0);
+    }
+    public int process(char[] chs,int n){
+        if (n==chs.length)
+            return 1;
+        if (chs[n] == '0')
+            return 0;
+        int res= process(chs,n+1);
+        if (n+1<chs.length && (chs[n]-'0')*10 + chs[n+1]-'0'<27){
+            res += process(chs,n+2);
+        }
+        return res;
+    }
+
+    public int num2(String str){
+        if (str==null||str.equals(""))
+            return 0;
+        char[] chs = str.toCharArray();
+        int cur =chs[chs.length-1]=='0'?0:1;
+
+        return cur;
+    }
 }

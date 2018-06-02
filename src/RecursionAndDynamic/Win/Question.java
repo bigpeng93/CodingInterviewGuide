@@ -20,4 +20,22 @@ package RecursionAndDynamic.Win;
  *  开始时玩家A不管拿1还是2，玩家B作为绝顶聪明的人，都会把100拿走。玩家B会获胜，分数为100。所以返回100。
  */
 public class Question {
+    public int winOne(int[] arr){
+        if (arr.length==0||arr==null)
+            return 0;
+        return Math.max(f(arr,0,arr.length-1),s(arr,0,arr.length-1));
+    }
+    public int f(int[] arr,int i,int j){
+        if (i==j)
+            return arr[i];
+        return Math.max(arr[i]+s(arr,i+1,j),arr[j]+s(arr,i,j-1));
+
+    }
+    public int s(int[] arr,int i,int j){
+        if (i==j)
+            return 0;
+        return Math.min(f(arr,i+1,j),f(arr,i,j-1));
+    }
+
+
 }
