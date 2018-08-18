@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
-public class test{
+public class test {
     public static void main(String[] args) {
         Integer a = 1;
         Integer b = 2;
@@ -16,10 +16,10 @@ public class test{
         Long g = 3L;
         System.out.println(c == d);
         System.out.println(e == f);
-        System.out.println(c == (a+b));
-        System.out.println(c.equals(a+b));
-        System.out.println(g == (a+b));
-        System.out.println(g.equals(a+b));
+        System.out.println(c == (a + b));
+        System.out.println(c.equals(a + b));
+        System.out.println(g == (a + b));
+        System.out.println(g.equals(a + b));
         ExecutorService exec = Executors.newCachedThreadPool();
     }
 }

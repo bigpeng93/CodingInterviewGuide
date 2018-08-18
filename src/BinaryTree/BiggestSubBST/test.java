@@ -6,10 +6,10 @@ public class test extends TestBinaryTree {
     public static void main(String[] args) {
         int[][] nums = {
                 {6},
-                {1,12},
-                {0,3,10,13},
-                {-1,-1,-1,-1,4,14,20,16},
-                {2,5,11,15}
+                {1, 12},
+                {0, 3, 10, 13},
+                {-1, -1, -1, -1, 4, 14, 20, 16},
+                {2, 5, 11, 15}
 
 /*              //结果为16
                 {6},

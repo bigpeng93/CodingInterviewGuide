@@ -5,9 +5,9 @@ import LinkedQuestion.Node.TestNode;
 
 public class test extends TestNode {
     public static void main(String[] args) {
-        int[] nums = {0,1,2,3,4,5,6,7,8};
+        int[] nums = {0, 1, 2, 3, 4, 5, 6, 7, 8};
         Node head = makeLinkedNode(nums);
-        Node node = getNthNode(head,4);
+        Node node = getNthNode(head, 4);
         new Solution().removeNodeWired(node);
         printNode(head);
 

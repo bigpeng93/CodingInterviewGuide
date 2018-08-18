@@ -4,7 +4,7 @@ import LinkedQuestion.Node.Node;
 
 /**
  * 环形单链表的约瑟夫问题
- *
+ * <p>
  * 据说著名的犹太历史学家Josephus有过以下故事：在罗马人占领桥塔帕特后，
  * 39个犹太人与Josephus 及他的朋友躲到一个洞中，39个犹太人宁愿死也不要被敌人抓到，
  * 于是决定了一个自杀方式，41个人排成一个圆圈，由第一个人开始报数，报数到3的人就自杀，
@@ -15,21 +15,21 @@ import LinkedQuestion.Node.Node;
  * 返回：最后生存下来的节点，且这个节点自己组成环形单向链表，其他节点都删掉。
  */
 public class Solution {
-    public Node josephusKillOne(Node head,int m){
-        if(head == null|| head.next == head || m<1){
+    public Node josephusKillOne(Node head, int m) {
+        if (head == null || head.next == head || m < 1) {
             return head;
         }
         Node last = head;
-        while (last.next != head){
+        while (last.next != head) {
             last = last.next;
         }
         int count = 0;
-        while (head != last){
-            if(++count == m){
+        while (head != last) {
+            if (++count == m) {
                 System.out.println(last.next.value);
                 last.next = head.next;
                 count = 0;
-            }else {
+            } else {
                 last = last.next;
             }
             head = last.next;
@@ -39,29 +39,30 @@ public class Solution {
 
     /**
      * 进阶：
-     *  如果链表节点数为N，想在时间复杂度为O(N)时完成原问题的要求。
+     * 如果链表节点数为N，想在时间复杂度为O(N)时完成原问题的要求。
      */
-    public Node josephusKillTwo(Node head,int m){
-       if(head == null || head.next == head || m<1){
-           return head;
-       }
-       Node cur = head.next;
-       int tmp = 1;
-       while (cur != head){
-           tmp++;
-           cur = cur.next;
-       }
-       tmp = getLive(tmp,m);
-       while (--tmp != 0){
-           head = head.next;
-       }
-       head.next = head;
-       return head;
+    public Node josephusKillTwo(Node head, int m) {
+        if (head == null || head.next == head || m < 1) {
+            return head;
+        }
+        Node cur = head.next;
+        int tmp = 1;
+        while (cur != head) {
+            tmp++;
+            cur = cur.next;
+        }
+        tmp = getLive(tmp, m);
+        while (--tmp != 0) {
+            head = head.next;
+        }
+        head.next = head;
+        return head;
     }
-    private int getLive(int i,int m){
-        if(i==1){
+
+    private int getLive(int i, int m) {
+        if (i == 1) {
             return 1;
         }
-        return (getLive(i-1,m)+m-1) % i + 1;
+        return (getLive(i - 1, m) + m - 1) % i + 1;
     }
 }

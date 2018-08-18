@@ -4,45 +4,44 @@ import LinkedQuestion.Node.Node;
 
 /**
  * 按照左右半区的方式重新组合单链表
- *
+ * <p>
  * 给定一个单链表的头部节点head，链表长度为N，如果N为偶数，那么前N/2个节点算作左半区，
  * 后N/2个节点算作右半区；如果N为奇数，那么前N/2个节点算作左半区，后N/2+1个节点算作右半区。
  * 左半区从左到右依次记为L1->L2->->...，右半区从左到右依次记为R1->R2->...，
  * 请将单链表调整成L1->R1->L2->R2->...的形式。
- *
+ * <p>
  * 例如：
- *  1->null,调整为1->null。
- *  1->2->null，调整为1->2->null。
- *  1->2->3->null，调整为1->2->3->null。
- *  1->2->3->4->null，调整为1->3->2->4->null。
- *  1->2->3->4->5->null，调整为1->3->2->4->5->null。
- *  1->2->3->4->5->6->null，调整为1->4->2->5->3->6->null。
- *
+ * 1->null,调整为1->null。
+ * 1->2->null，调整为1->2->null。
+ * 1->2->3->null，调整为1->2->3->null。
+ * 1->2->3->4->null，调整为1->3->2->4->null。
+ * 1->2->3->4->5->null，调整为1->3->2->4->5->null。
+ * 1->2->3->4->5->6->null，调整为1->4->2->5->3->6->null。
  */
 public class Solution {
-    public void relocate(Node head){
+    public void relocate(Node head) {
         if (head == null || head.next == null) {
             return;
         }
-        Node mid= head;
+        Node mid = head;
         Node right = head.next;
-        while (right.next != null && right.next.next!= null){
+        while (right.next != null && right.next.next != null) {
             mid = mid.next;
-            right =right.next.next;
+            right = right.next.next;
         }
         right = mid.next;
         mid.next = null;
-        merge(head,right);
+        merge(head, right);
     }
 
-    public void merge(Node left,Node right){
+    public void merge(Node left, Node right) {
         Node next = null;
-        while (left.next!=null){
+        while (left.next != null) {
             next = right.next;
             right.next = left.next;
             left.next = right;
             left = right.next;
-            right= next;
+            right = next;
         }
         left.next = right;
     }

@@ -3,7 +3,7 @@ package BinaryTree.BstTopoSize;
 import BinaryTree.Node.Node;
 import BinaryTree.Node.TestBinaryTree;
 
-public class test extends TestBinaryTree{
+public class test extends TestBinaryTree {
     public static void main(String[] args) {
         int[][] nums = {
                 {6},
