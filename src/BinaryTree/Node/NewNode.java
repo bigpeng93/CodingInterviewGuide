@@ -6,7 +6,7 @@ public class NewNode {
     public NewNode right;
     public NewNode parent;
 
-    public NewNode(int data) {
+    public NewNode(int data){
         this.value = data;
     }
 }

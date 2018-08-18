@@ -2,7 +2,7 @@ package BinaryTree.TarjanQuery;
 
 /**
  * Tarjan算法与并查集解决二叉树节点间最近公共祖先的批量查询问题
- * <p>
+ *
  * 定义一个Query类:
  * 一个Query类的实例表示一条查询语句，表示想要查询o1节点和o2节点的最近公共祖先节点。
  * 给定一棵二叉树的头节点head，并给定所有的查询语句，即一个Query类型的数组Query[] ques,

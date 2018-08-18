@@ -3,12 +3,12 @@ package BinaryTree.SerialOrReconTreeNode;
 import BinaryTree.Node.Node;
 import BinaryTree.Node.TestBinaryTree;
 
-public class test extends TestBinaryTree {
+public class test extends TestBinaryTree{
     public static void main(String[] args) {
         int[][] nums = {
                 {1},
-                {2, 3},
-                {4, -1, -1, 5},
+                {2,3},
+                {4,-1,-1,5},
         };
         Node head = makeBinaryNode(nums);
         String serial = new Solution().serialByPre(head);
