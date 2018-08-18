@@ -2,8 +2,170 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6c69ac5-8c90-4f3b-82ec-de5e69ecade8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StringProblem/RotateWord/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringProblem/RotateWord/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringProblem/RotateWord/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/GetMinKNums.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/LeftUnique/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayAndMatrix/LeftUnique/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/LeftUnique/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayAndMatrix/LeftUnique/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/MaxLength/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayAndMatrix/MaxLength/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/MaxLength/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayAndMatrix/MaxLength/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/PrintMatrixZigZag/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayAndMatrix/PrintMatrixZigZag/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/PrintMatrixZigZag/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayAndMatrix/PrintMatrixZigZag/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/getMaxLength/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayAndMatrix/getMaxLength/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayAndMatrix/getMaxLength/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayAndMatrix/getMaxLength/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/BiggestSubBST/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/BiggestSubBST/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/BiggestSubBST/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/BiggestSubBST/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/BstTopoSize/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/BstTopoSize/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/BstTopoSize/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/BstTopoSize/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/Contains/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/Contains/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/Contains/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/Contains/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GenerateTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GenerateTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GenerateTree/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GenerateTree/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GetMaxLength/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GetMaxLength/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GetMaxLength/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GetMaxLength/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GetNextNode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GetNextNode/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GetNextNode/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GetNextNode/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GetPosArray/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GetPosArray/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GetPosArray/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GetPosArray/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GetTwoErrNodes/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GetTwoErrNodes/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/GetTwoErrNodes/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/GetTwoErrNodes/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/IsBSTOrCBT/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/IsBSTOrCBT/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/IsBSTOrCBT/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/IsBSTOrCBT/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/IsBalance/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/IsBalance/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/IsBalance/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/IsBalance/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/IsPostArray/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/IsPostArray/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/IsPostArray/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/IsPostArray/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/IsSubTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/IsSubTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/LowestAncestor/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/LowestAncestor/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/LowestAncestor/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/LowestAncestor/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/MaxDistance/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/MaxDistance/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/MaxDistance/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/MaxDistance/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/Morris/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/Morris/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/Node/NewNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/Node/NewNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/Node/TestBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/Node/TestBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/Node/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/Node/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/NodeNum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/NodeNum/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/NodeNum/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/NodeNum/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/NumTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/NumTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/OrderRecur/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/OrderRecur/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/OrderRecur/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/OrderRecur/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/PrintByLevelOrZigZag/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/PrintByLevelOrZigZag/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/PrintByLevelOrZigZag/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/PrintByLevelOrZigZag/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/PrintEdge/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/PrintEdge/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/PrintEdge/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/PrintEdge/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/PrintTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/PrintTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/PrintTree/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/PrintTree/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/SerialOrReconTreeNode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/SerialOrReconTreeNode/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/SerialOrReconTreeNode/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/SerialOrReconTreeNode/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/TarjanQuery/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/TarjanQuery/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/TarjanQuery/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/TarjanQuery/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/ToTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/ToTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree/ToTree/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree/ToTree/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitCompute/Change/changeNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitCompute/Change/changeNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitCompute/Change/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitCompute/Change/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitCompute/Computer/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitCompute/Computer/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitCompute/Count/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitCompute/Count/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitCompute/GetMax/getMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitCompute/GetMax/getMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitCompute/GetMax/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitCompute/GetMax/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitCompute/OnceNum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitCompute/OnceNum/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BitCompute/PrintOddTimesNum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitCompute/PrintOddTimesNum/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/AddList/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/AddList/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/AddList/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/AddList/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Convert/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Convert/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Convert/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Convert/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/CopyListWithRand/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/CopyListWithRand/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/InsertNum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/InsertNum/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/InsertNum/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/InsertNum/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/IsPalindromel/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/IsPalindromel/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/IsPalindromel/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/IsPalindromel/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/JosephusKill/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/JosephusKill/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/JosephusKill/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/JosephusKill/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/ListPartition/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/ListPartition/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/ListPartition/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/ListPartition/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Merge/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Merge/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Merge/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Merge/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Node/DoubleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Node/DoubleNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Node/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Node/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Node/NodeSpe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Node/NodeSpe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Node/TestNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Node/TestNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Node/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Node/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/NodeLoop/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/NodeLoop/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/NodeLoop/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/NodeLoop/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/PrintCommonPart/PrintCommonPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/PrintCommonPart/PrintCommonPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/PrintCommonPart/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/PrintCommonPart/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Relocate/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Relocate/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/Relocate/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/Relocate/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveLastKthNode/RemoveLastKthNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveLastKthNode/RemoveLastKthNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveLastKthNode/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveLastKthNode/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveMidNode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveMidNode/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveMidNode/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveMidNode/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveNodeWired/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveNodeWired/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveNodeWired/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveNodeWired/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveRep/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveRep/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveRep/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveRep/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveValue/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveValue/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RemoveValue/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RemoveValue/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RevereseList/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RevereseList/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/RevereseList/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/RevereseList/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/ReverseKNode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/ReverseKNode/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/ReverseKNode/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/ReverseKNode/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/ReversePart/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/ReversePart/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/ReversePart/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/ReversePart/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/SelectionSort/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/SelectionSort/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedQuestion/SelectionSort/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedQuestion/SelectionSort/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewCode/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewCode/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Coins/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Coins/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Coins/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Coins/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/FibonacciQuestions/ExtQueOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/FibonacciQuestions/ExtQueOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/FibonacciQuestions/ExtQueTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/FibonacciQuestions/ExtQueTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/FibonacciQuestions/OrgQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/FibonacciQuestions/OrgQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/FibonacciQuestions/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/FibonacciQuestions/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Hanoi/ExtQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Hanoi/ExtQue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Hanoi/OrgQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Hanoi/OrgQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/IsCross/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/IsCross/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/IsCross/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/IsCross/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/IsValid/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/IsValid/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Jump/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Jump/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Jump/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Jump/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Lcse/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Lcse/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Lcse/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Lcse/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Lcst/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Lcst/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Lcst/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Lcst/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/List/OrgQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/List/OrgQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/List/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/List/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/LongestConsecutive/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/LongestConsecutive/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/LongestConsecutive/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/LongestConsecutive/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCoins/ExtQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCoins/ExtQue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCoins/OrgQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCoins/OrgQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCoins/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCoins/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCost/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCost/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCost/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinCost/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinHP/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinHP/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinHP/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinHP/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinPathSum/OrgQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinPathSum/OrgQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/MinPathSum/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/MinPathSum/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/NQueen/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/NQueen/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Num/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Num/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Win/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Win/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionAndDynamic/Win/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionAndDynamic/Win/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/DogCatQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/DogCatQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/PetEnterQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/DogCatQueue/PetEnterQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/GetMaxWindow/GetMaxWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/GetMaxWindow/GetMaxWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/GetMaxWindow/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/GetMaxWindow/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/GetNum/GetNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/GetNum/GetNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/GetNum/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/GetNum/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem/Active.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem/Active.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem/HanoiProblem1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem/HanoiProblem1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem/HanoiProblem2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem/HanoiProblem2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/MaxRecSize/MaxRecSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/MaxRecSize/MaxRecSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/MaxTree/MaxTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/MaxTree/MaxTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/MaxTree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/MaxTree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/MaxTree/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/MaxTree/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/SortStackByStack/SortStackByStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/SortStackByStack/SortStackByStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/SortStackByStack/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/SortStackByStack/test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +179,7 @@
     <favorites_list name="CodingInterviewGuide" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ArrayAndMatrix/ArrayMaxSum/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -30,7 +192,7 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree/BiggestSubBST/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="35">
               <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
@@ -144,7 +306,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-11" />
     <option name="y" value="-18" />
     <option name="width" value="1370" />
@@ -155,6 +317,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,9 +362,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,6 +600,7 @@
       <workItem from="1529217762889" duration="213000" />
       <workItem from="1529218068008" duration="104000" />
       <workItem from="1533464756753" duration="143000" />
+      <workItem from="1534573053829" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="LinkedQuestion">
       <created>1519916073592</created>
@@ -681,11 +844,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429503000" />
+    <option name="totallyTimeSpent" value="429820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="9" />
@@ -697,10 +859,10 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="right" id="Run" order="9" weight="0.21482602" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="1.0" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.8936877" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.27912253" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.28366113" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="6" sideWeight="0.49337748" side_tool="true" weight="0.2193646" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -718,21 +880,21 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.36611196" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Run" order="9" weight="0.22163388" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1644628" />
       <window_info id="Structure" order="6" sideWeight="0.49337748" side_tool="true" weight="0.2193646" />
       <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="right" id="Run" order="9" weight="0.22163388" />
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.35596028" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.63787377" />
@@ -741,7 +903,7 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.41860464" />
       <window_info id="Capture Tool" order="1" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.35596028" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.31893688" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.5066225" side_tool="true" weight="0.2193646" />
@@ -1163,7 +1325,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree/BiggestSubBST/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="35">
           <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>

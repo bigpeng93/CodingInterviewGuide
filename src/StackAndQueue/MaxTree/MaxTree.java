@@ -4,70 +4,71 @@ import java.util.HashMap;
 import java.util.Stack;
 
 public class MaxTree {
-    public Node getMaxTree(int[] arr){
+    public Node getMaxTree(int[] arr) {
         Node[] nArr = new Node[arr.length];
-        for(int i=0;i<arr.length;i++){
+        for (int i = 0; i < arr.length; i++) {
             nArr[i] = new Node(arr[i]);
         }
         Stack<Node> stack = new Stack<>();
         HashMap<Node, Node> lBigMap = new HashMap<>();
         HashMap<Node, Node> rBigMap = new HashMap<>();
-        for(int i=0;i<arr.length;i++){
+        for (int i = 0; i < arr.length; i++) {
             Node currentNode = nArr[i];
-            while(!stack.isEmpty() && stack.peek().value < currentNode.value){
-                popStackSetMap(stack,lBigMap);
+            while (!stack.isEmpty() && stack.peek().value < currentNode.value) {
+                popStackSetMap(stack, lBigMap);
             }
             stack.push(currentNode);
         }
-        while (!stack.isEmpty()){
-            popStackSetMap(stack,lBigMap);
+        while (!stack.isEmpty()) {
+            popStackSetMap(stack, lBigMap);
         }
 
-        for(int i=arr.length-1;i>=0;i--){
+        for (int i = arr.length - 1; i >= 0; i--) {
             Node currentNode = nArr[i];
-            while(!stack.isEmpty() && stack.peek().value < currentNode.value){
-                popStackSetMap(stack,rBigMap);
+            while (!stack.isEmpty() && stack.peek().value < currentNode.value) {
+                popStackSetMap(stack, rBigMap);
             }
             stack.push(currentNode);
         }
-        while (!stack.isEmpty()){
-            popStackSetMap(stack,rBigMap);
+        while (!stack.isEmpty()) {
+            popStackSetMap(stack, rBigMap);
         }
 
         Node head = null;
 
-        for(int i=0;i<nArr.length;i++){
+        for (int i = 0; i < nArr.length; i++) {
             Node curNode = nArr[i];
             Node left = lBigMap.get(curNode);
             Node right = rBigMap.get(curNode);
-            if(left == null && right == null){
+            if (left == null && right == null) {
                 head = curNode;
-            }else if(left == null){
-                if(right.left == null){
+            } else if (left == null) {
+                if (right.left == null) {
                     right.left = curNode;
-                }else
+                } else
                     right.right = curNode;
-            }else if(right == null){
-                if(left.left == null){
+            } else if (right == null) {
+                if (left.left == null) {
                     left.left = curNode;
-                }else
+                } else
                     left.right = curNode;
-            }else{
+            } else {
                 Node parent = left.value < right.value ? left : right;
-                if(parent.left == null){
+                if (parent.left == null) {
                     parent.left = curNode;
-                }else
+                } else
                     parent.right = curNode;
             }
         }
         return head;
     }
-    private void popStackSetMap(Stack<Node> stack,HashMap<Node,Node> map){
+
+    private void popStackSetMap(Stack<Node> stack, HashMap<Node, Node> map) {
         Node popNode = stack.pop();
-        if(stack.isEmpty()){
-            map.put(popNode,null);
-        }else{
-            map.put(popNode,stack.peek());
+        if (stack.isEmpty()) {
+            map.put(popNode, null);
+        } else {
+            map.put(popNode, stack.peek());
         }
     }
 }

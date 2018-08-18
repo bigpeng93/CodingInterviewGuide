@@ -1,7 +1,7 @@
 package StackAndQueue.DogCatQueue;
 
 public class Cat extends Pet {
-    public Cat(){
+    public Cat() {
         super("Cat");
     }
 }

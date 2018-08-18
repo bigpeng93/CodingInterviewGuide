@@ -6,6 +6,6 @@ public class test {
         System.out.println(hanoiProblem1.hanoiProblem(4,"left","mid","right"));
     */
         HanoiProblem2 hanoiProblem2 = new HanoiProblem2();
-        System.out.println(hanoiProblem2.hanoiProblem2(4,"left","mid","right"));
+        System.out.println(hanoiProblem2.hanoiProblem2(4, "left", "mid", "right"));
     }
 }
